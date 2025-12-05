@@ -1,9 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <title>Website của Linh ✨</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffd6e7, #ffeef8);
+      text-align: center;
+      padding: 40px;
+      color: #444;
+    }
+
+    .card {
+      background: white;
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      color: #ff5fa2;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff5fa2;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff2e84;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Xin chào! Website GitHub Pages của Linh đã hoạt động ❤️</h1>
+
+  <div class="card">
+    <h1>🌸 Chào mừng đến website của Linh 🌸</h1>
+    <p>
+      Đây là trang web cá nhân của mình.<br>
+      Mình đang học HTML và GitHub Pages để làm web đẹp hơn ✨.
+    </p>
+
+    <a href="#" class="btn">Nhấn vào đây nè 💗</a>
+  </div>
+
 </body>
 </html>
