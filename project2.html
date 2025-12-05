@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Dự án 2 - Máy tính JS</title>
+    <style>
+        body {
+            background: #ffeaf7;
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+        .calc {
+            background: white;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 240px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ff7ac8;
+            font-size: 16px;
+        }
+        button { cursor: pointer; background: #ffb6da; }
+    </style>
+</head>
+<body>
+
+    <h1>📌 Dự án 2: Máy tính đơn giản</h1>
+
+    <div class="calc">
+        <input id="num1" placeholder="Số thứ nhất">
+        <input id="num2" placeholder="Số thứ hai">
+
+        <button onclick="tinh('+')">Cộng</button>
+        <button onclick="tinh('-')">Trừ</button>
+        <button onclick="tinh('*')">Nhân</button>
+        <button onclick="tinh('/')">Chia</button>
+
+        <p>Kết quả: <b id="kq"></b></p>
+    </div>
+
+    <script>
+        function tinh(op) {
+            let a = Number(document.getElementById('num1').value);
+            let b = Number(document.getElementById('num2').value);
+            let result = eval(a + op + b);
+            document.getElementById('kq').innerText = result;
+        }
+    </script>
+
+    <br><br>
+    <a href="index.html">⬅️ Quay lại trang chính</a>
+
+</body>
+</html>
