@@ -1,76 +1,112 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Website của Linh ✨</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương Linh - Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #ffd6e7, #ffeef8);
-      text-align: center;
-      padding: 40px;
-      color: #444;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
 
-    .card {
-      background: white;
-      width: 80%;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease-in-out;
-    }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 40px 20px;
+        }
 
-    h1 {
-      color: #ff5fa2;
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
+        img.avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        }
 
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
+        h1 {
+            font-size: 32px;
+            margin-top: 20px;
+        }
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #ff5fa2;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 30px;
-      transition: 0.3s;
-    }
+        p.desc {
+            font-size: 18px;
+            color: #555;
+        }
 
-    .btn:hover {
-      background: #ff2e84;
-      transform: scale(1.05);
-    }
+        .about-box {
+            background: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+            text-align: left;
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+        .about-box h2 {
+            margin-top: 0;
+        }
+
+        .social {
+            margin-top: 25px;
+        }
+
+        .social a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #000;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background: #444;
+        }
+    </style>
 </head>
-
 <body>
 
-  <div class="card">
-    <h1>🌸 Chào mừng đến website của Linh 🌸</h1>
-    <p>
-      Đây là trang web cá nhân của mình.<br>
-      Mình đang học HTML và GitHub Pages để làm web đẹp hơn ✨.
-    </p>
+    <div class="container">
+        <img class="avatar" src="https://i.imgur.com/4M7IWwP.jpeg" alt="Avatar">
 
-    <a href="#" class="btn">Nhấn vào đây nè 💗</a>
-  </div>
+        <h1>Nguyễn Phương Linh</h1>
+        <p class="desc">
+            Học sinh. Thích lập trình 💻 • Thiết kế 🎨 • Âm nhạc 🎵  
+        </p>
+
+        <!-- ABOUT ME BOX -->
+        <div class="about-box">
+            <h2>Giới thiệu về tôi</h2>
+            <p>
+                Hiện tại mình là sinh viên năm 2 ngành <b>Kinh tế</b>.  
+                Mình yêu thích học hỏi, khám phá những điều mới và đặc biệt thích phát triển bản thân qua công nghệ.
+                Đây là nơi mình lưu trữ thông tin cá nhân, dự án và hành trình của mình!
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://github.com/phuonglinhnguyen2008" target="_blank">GitHub</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+
+        <a class="btn" href="#" download>📄 Tải CV</a>
+    </div>
 
 </body>
 </html>
