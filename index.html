@@ -13,6 +13,10 @@
             text-align: center;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         .card {
             background: white;
             width: 70%;
@@ -54,6 +58,13 @@
             padding: 20px;
             border-radius: 15px;
             margin-top: 20px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .project:hover {
+            background: #ffcced;
+            transform: translateY(-3px);
         }
 
         .project-title {
@@ -103,27 +114,37 @@
     <div class="section">
         <h2>💗 Một vài dự án mình đã làm</h2>
 
-        <div class="project">
-            <div class="project-title">📌 1. Website Portfolio cá nhân</div>
-            <div class="project-desc">
-                Trang web hồ sơ cá nhân được xây bằng HTML + CSS cơ bản.
-                Đây là dự án giúp mình học GitHub Pages và quản lý code.
+        <!-- PROJECT 1 -->
+        <a href="project1.html">
+            <div class="project">
+                <div class="project-title">📌 1. Website Portfolio cá nhân</div>
+                <div class="project-desc">
+                    Trang web hồ sơ cá nhân được xây bằng HTML + CSS cơ bản.  
+                    Đây là dự án giúp mình học GitHub Pages và quản lý code.
+                </div>
             </div>
-        </div>
+        </a>
 
-        <div class="project">
-            <div class="project-title">📌 2. Mini App: Máy tính cộng – trừ – nhân – chia</div>
-            <div class="project-desc">
-                Một ứng dụng nhỏ dùng JavaScript để luyện tư duy lập trình.
+        <!-- PROJECT 2 -->
+        <a href="project2.html">
+            <div class="project">
+                <div class="project-title">📌 2. Mini App: Máy tính cộng – trừ – nhân – chia</div>
+                <div class="project-desc">
+                    Một ứng dụng nhỏ dùng JavaScript để luyện tư duy lập trình.
+                </div>
             </div>
-        </div>
+        </a>
 
-        <div class="project">
-            <div class="project-title">📌 3. Trang web bài học ghi chú (Study Notes)</div>
-            <div class="project-desc">
-                Giao diện dễ thương dùng để lưu lại các ghi chú bài học, template pastel do mình tự thiết kế.
+        <!-- PROJECT 3 -->
+        <a href="project3.html">
+            <div class="project">
+                <div class="project-title">📌 3. Trang web bài học ghi chú (Study Notes)</div>
+                <div class="project-desc">
+                    Giao diện dễ thương dùng để lưu lại các ghi chú bài học,
+                    template pastel do mình tự thiết kế.
+                </div>
             </div>
-        </div>
+        </a>
 
     </div>
 
