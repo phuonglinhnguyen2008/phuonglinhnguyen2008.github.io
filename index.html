@@ -3,109 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phương Linh - Portfolio</title>
+    <title>Website của Linh</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+            background: #ffd6e8;
             text-align: center;
         }
 
-        .container {
-            max-width: 700px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        img.avatar {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #fff;
-            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        .card {
+            background: white;
+            width: 70%;
+            margin: 60px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
 
         h1 {
+            color: #ff4da6;
             font-size: 32px;
-            margin-top: 20px;
         }
 
-        p.desc {
+        p {
             font-size: 18px;
-            color: #555;
+            color: #444;
         }
 
-        .about-box {
-            background: white;
-            padding: 20px;
-            margin-top: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.08);
-            text-align: left;
-        }
-
-        .about-box h2 {
-            margin-top: 0;
-        }
-
-        .social {
-            margin-top: 25px;
-        }
-
-        .social a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-size: 20px;
-        }
-
-        .btn {
+        .button {
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 25px;
             padding: 12px 25px;
-            background: #000;
-            color: #fff;
-            border-radius: 6px;
-            text-decoration: none;
+            background: #ff4da6;
+            color: white;
             font-size: 18px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.2s;
         }
 
-        .btn:hover {
-            background: #444;
+        .button:hover {
+            background: #ff1a8c;
+        }
+
+        /* PHẦN GIỚI THIỆU */
+        #about {
+            margin-top: 80px;
+            background: white;
+            padding: 40px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        #about h2 {
+            color: #ff4da6;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <img class="avatar" src="https://i.imgur.com/4M7IWwP.jpeg" alt="Avatar">
+    <!-- KHỐI WELCOME -->
+    <div class="card">
+        <h1>🌸 Chào mừng đến website của Linh 🌸</h1>
+        <p>Đây là trang web cá nhân của mình.<br>
+        Mình đang học HTML và GitHub Pages để làm web đẹp hơn ✨.</p>
 
-        <h1>Nguyễn Phương Linh</h1>
-        <p class="desc">
-            Học sinh. Thích lập trình 💻 • Thiết kế 🎨 • Âm nhạc 🎵  
+        <!-- NÚT KÉO XUỐNG -->
+        <a class="button" href="#about">Nhấn vào đây nè 💗</a>
+    </div>
+
+    <!-- KHỐI GIỚI THIỆU -->
+    <div id="about">
+        <h2>🌼 Giới thiệu về Linh</h2>
+        <p>
+            Mình là <b>Nguyễn Phương Linh</b> 🌸.<br>
+            Hiện tại mình là <b>sinh viên năm 2 ngành Kinh Tế</b>.<br>
+            Mình thích lập trình, thiết kế và khám phá những điều mới ✨.<br>
+            Đây là nơi mình lưu lại hành trình học tập và phát triển bản thân.
         </p>
-
-        <!-- ABOUT ME BOX -->
-        <div class="about-box">
-            <h2>Giới thiệu về tôi</h2>
-            <p>
-                Hiện tại mình là sinh viên năm 2 ngành <b>Kinh tế</b>.  
-                Mình yêu thích học hỏi, khám phá những điều mới và đặc biệt thích phát triển bản thân qua công nghệ.
-                Đây là nơi mình lưu trữ thông tin cá nhân, dự án và hành trình của mình!
-            </p>
-        </div>
-
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://github.com/phuonglinhnguyen2008" target="_blank">GitHub</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
-
-        <a class="btn" href="#" download>📄 Tải CV</a>
     </div>
 
 </body>
