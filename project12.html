@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Outfit</title>
+
+<style>
+    body { background:#ffd6e8; font-family:Arial; text-align:center;}
+    .card { background:white; width:70%; padding:40px; margin:50px auto;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    .fit { background:#ffe6f3; padding:20px; border-radius:15px; margin-top:20px;}
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Suggested Outfit 👗</h1>
+
+    <div id="outfit" class="fit">Nhấn để xem outfit ✨</div>
+
+    <button onclick="newFit()">Random</button>
+
+    <script>
+        const fits = [
+            "Váy pastel + cardigan trắng",
+            "Áo croptop + quần jean ống rộng",
+            "Sweater hồng + chân váy xếp ly",
+            "Hoodie trắng + chân váy đen"
+        ];
+
+        function newFit() {
+            document.getElementById("outfit").innerHTML =
+                fits[Math.floor(Math.random() * fits.length)];
+        }
+    </script>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
