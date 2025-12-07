@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Quote</title>
+
+<style>
+    body { background:#ffd6e8; text-align:center; font-family:Arial; margin:0; }
+    .card { background:white; width:70%; padding:40px; margin:50px auto;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    button { padding:10px 20px; background:#ff9ac6; color:white; border:none;
+             border-radius:12px; margin-top:20px; }
+    #quote { margin-top:20px; font-size:20px; color:#444; }
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Câu nói truyền cảm hứng</h1>
+
+    <p id="quote">Nhấn nút để xem câu nói hay ✨</p>
+
+    <button onclick="newQuote()">Hiển thị câu nói</button>
+
+    <script>
+        const quotes = [
+            "Bạn xứng đáng với những điều tốt đẹp.",
+            "Hôm nay là ngày tuyệt vời để bắt đầu.",
+            "Cứ đi rồi sẽ đến 💗",
+            "Không gì là không thể.",
+            "Hãy mỉm cười — bạn đang tỏa sáng!"
+        ];
+
+        function newQuote() {
+            let q = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote").innerHTML = q;
+        }
+    </script>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
