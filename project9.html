@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đếm bước chân</title>
+
+<style>
+    body { background:#ffd6e8; text-align:center; font-family:Arial;}
+    .card { background:white; width:70%; padding:40px; margin:50px auto;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    .num { font-size:40px; font-weight:bold; margin:20px; }
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Bộ đếm bước chân</h1>
+
+    <div id="steps" class="num">0</div>
+
+    <button onclick="addStep()">Bước thêm</button>
+
+    <script>
+        let steps = 0;
+        function addStep() {
+            steps++;
+            document.getElementById("steps").innerHTML = steps;
+        }
+    </script>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
