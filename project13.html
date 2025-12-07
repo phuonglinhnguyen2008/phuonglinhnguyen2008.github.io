@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card Animation</title>
+
+<style>
+    body { background:#ffd6e8; font-family:Arial; text-align:center;}
+    .card { background:white; width:70%; padding:40px; margin:50px auto;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    .profile {
+        width:200px; height:200px; border-radius:20px;
+        background:#ffe6f3; margin:20px auto; padding:30px;
+        transition:0.3s; font-size:22px; display:flex;
+        align-items:center; justify-content:center;
+    }
+    .profile:hover {
+        transform:scale(1.1);
+        background:#ffcee4;
+    }
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Profile Card Animation</h1>
+
+    <div class="profile">
+        Linh 💗
+    </div>
+
+    <p>Hover vào thẻ để xem hiệu ứng ✨</p>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
