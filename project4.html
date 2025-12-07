@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-do List</title>
+
+<style>
+    body { background:#ffd6e8; font-family:Arial; text-align:center; margin:0;}
+    .card { background:white; width:70%; margin:50px auto; padding:40px;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    input { padding:10px; width:70%; border-radius:10px; border:1px solid #ffa3c8;}
+    button { padding:10px 20px; border:none; background:#ff9ac6; color:white;
+             border-radius:10px; margin-left:5px; }
+    li { background:#ffe6f3; padding:10px; border-radius:10px; margin-top:10px; }
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>To-do List pastel</h1>
+
+    <input id="task" type="text" placeholder="Nhập việc cần làm...">
+    <button onclick="addTask()">Thêm</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        function addTask() {
+            let task = document.getElementById("task").value;
+            if(task.trim() === "") return;
+            let li = document.createElement("li");
+            li.innerHTML = task;
+            document.getElementById("list").appendChild(li);
+            document.getElementById("task").value = "";
+        }
+    </script>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
