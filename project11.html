@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mood Music</title>
+
+<style>
+    body { background:#ffd6e8; text-align:center; font-family:Arial;}
+    .card { background:white; width:70%; margin:50px auto; padding:40px;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    select { padding:10px; border-radius:10px; border:1px solid #ffa3c8; }
+    .song { background:#ffe6f3; padding:15px; border-radius:10px; margin-top:20px;}
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Gợi ý playlist theo mood 🎵</h1>
+
+    <select id="mood">
+        <option value="happy">Vui vẻ</option>
+        <option value="sad">Buồn nhẹ</option>
+        <option value="focus">Tập trung</option>
+    </select>
+
+    <button onclick="showSong()">Gợi ý nhạc</button>
+
+    <div id="result" class="song"></div>
+
+    <script>
+        function showSong() {
+            const mood = document.getElementById("mood").value;
+            let song = "";
+            if(mood === "happy") song = "Daylight – Taylor Swift";
+            if(mood === "sad") song = "Drivers License – Olivia Rodrigo";
+            if(mood === "focus") song = "Lofi Chill Mix";
+            document.getElementById("result").innerHTML = song;
+        }
+    </script>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
