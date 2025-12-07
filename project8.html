@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Màu pastel</title>
+
+<style>
+    body { background:#ffd6e8; text-align:center; font-family:Arial; }
+    .card { background:white; width:70%; margin:50px auto; padding:40px;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    .color-box { width:150px; height:150px; border-radius:20px; margin:20px auto; }
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Bảng màu pastel</h1>
+
+    <div id="box" class="color-box" style="background:#ffd1dc;"></div>
+
+    <button onclick="newColor()">Đổi màu</button>
+
+    <script>
+        const colors = ["#ffd1dc","#ffe4f2","#ffcce0","#ffb3d9","#ff99cc"];
+        function newColor() {
+            document.getElementById("box").style.background =
+                colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
