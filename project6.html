@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard Từ Vựng</title>
+
+<style>
+    body { background:#ffd6e8; font-family:Arial; text-align:center; }
+    .card { background:white; padding:40px; width:70%; margin:50px auto;
+            border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.08);}
+    .flash { background:#ffe6f3; padding:30px; border-radius:15px;
+             font-size:22px; cursor:pointer; margin-top:20px; }
+    .back { padding:10px 24px; background:#ff9ac6; color:white; border-radius:12px;
+            display:inline-block; margin-top:25px; font-weight:bold; }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Flashcard từ vựng</h1>
+
+    <div id="card" class="flash" onclick="flipCard()">apple 🍎</div>
+
+    <script>
+        let front = true;
+        function flipCard() {
+            if(front) {
+                document.getElementById("card").innerHTML = "quả táo";
+            } else {
+                document.getElementById("card").innerHTML = "apple 🍎";
+            }
+            front = !front;
+        }
+    </script>
+
+    <a class="back" href="index.html">⬅ Quay lại</a>
+</div>
+
+</body>
+</html>
